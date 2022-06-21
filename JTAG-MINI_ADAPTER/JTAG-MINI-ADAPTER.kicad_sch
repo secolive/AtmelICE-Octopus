@@ -6,7 +6,8 @@
 
   (title_block
     (title "JTAG-MINI-ADAPTER")
-    (rev "A0")
+    (rev "${rev}")
+    (comment 1 "${license}")
     (comment 3 "Notably suitable for Arduino DUE")
     (comment 4 "JTAG 50mil to 100mil adapter")
   )

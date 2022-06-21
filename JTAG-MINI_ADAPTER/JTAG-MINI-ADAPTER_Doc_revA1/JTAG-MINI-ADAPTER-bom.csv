@@ -1,0 +1,20 @@
+"Row";"Part";"Footprint";"Value";"References";"Quantity Per PCB";"Description";"Status"
+"1";"Conn_02x05_Odd_Even";"PinSocket_2x05_P1.27mm_Vertical";"ATMEL-ICE SAM SOCKET";"J1";"1";"Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)";" "
+"2";"Conn_JTAG_02x05";"IDC-Header_2x05_P2.54mm_Vertical_Key7";"SWD/JTAG SAM (ARM/Cortex-M dbg)";"J12";"1";"Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)";" "
+
+
+
+
+
+"Project info:"
+"Schematic:";"JTAG-MINI-ADAPTER"
+"Variant:";"default"
+"Revision:";"A1"
+"Date:";"2022-06-21_16-45-29"
+"KiCad Version:";"(6.0.2-0)"
+"Statistics:"
+"Component Groups:";"2"
+"Component Count:";"2"
+"Fitted Components:";"2"
+"Number of PCBs:";"1"
+"Total Components:";"2"

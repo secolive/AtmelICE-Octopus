@@ -1,12 +1,12 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(6.0.0-0)*
-G04 #@! TF.CreationDate,2022-01-14T23:12:18+01:00*
-G04 #@! TF.ProjectId,JTAG-MINI-ADAPTER,4a544147-2d4d-4494-9e49-2d4144415054,rev?*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(6.0.2-0)*
+G04 #@! TF.CreationDate,2022-06-21T16:49:53+02:00*
+G04 #@! TF.ProjectId,JTAG-MINI-ADAPTER,4a544147-2d4d-4494-9e49-2d4144415054,A1*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Copper,L1,Top*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (6.0.0-0)) date 2022-01-14 23:12:18*
+G04 Created by KiCad (PCBNEW (6.0.2-0)) date 2022-06-21 16:49:53*
 %MOMM*%
 %LPD*%
 G01*

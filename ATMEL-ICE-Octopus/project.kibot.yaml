@@ -1,0 +1,148 @@
+# ATTENTION! THIS ISN'T A FULLY FUNCTIONAL EXAMPLE.
+# You should take portions of this example and edit the options to make
+# them suitable for your use.
+# This file is useful to know all the available options.
+kibot:
+  version: 1
+
+preflight:
+  # [boolean=false] Update the XML version of the BoM (Bill of Materials).
+  # To ensure our generated BoM is up to date.
+  # Note that this isn't needed when using the internal BoM generator (`bom`).
+  update_xml: false
+
+outputs:
+  - name: 'gerber'
+    comment: 'Gerber output'
+    type: 'gerber'
+    dir: '%f_Fab_rev%r/'
+    options:
+      output: '%f-%i%I%v.%x'
+      gerber_job_file: '%f-%i%I%v.%x'
+
+      create_gerber_job_file: true
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: true
+      subtract_mask_from_silk: true
+      tent_vias: true
+      use_gerber_net_attributes: true
+      use_gerber_x2_attributes: false
+    layers: 'selected'
+
+
+  - name: 'pdf_pcb'
+    comment: 'Plot of pcb as pdf'
+    type: 'pdf'
+    dir: '%f_Doc_rev%r/'
+    options:
+      output: '%f-%i%I%v.%x'
+
+      exclude_edge_layer: false
+      exclude_pads_from_silkscreen: true
+      tent_vias: true
+    layers: 'selected'
+
+
+  # This output is what you get from the 'File/Fabrication output/Drill Files' menu in pcbnew.
+  - name: 'drill'
+    comment: 'Drill file'
+    type: 'excellon'
+    dir: '%f_Fab_rev%r/'
+    options:
+      # [string='%f-%i%I%v.%x'] name for the drill file, KiCad defaults if empty (%i='PTH_drill'). Affected by global options
+      output: '%f-%i%I%v.%x'
+      metric_units: true
+      pth_and_npth_single_file: true
+
+
+  # This output is what you get from the 'File/Fabrication output/Drill Files' menu in pcbnew.
+  - name: 'drill_map'
+    comment: 'Drill map and report'
+    type: 'excellon'
+    dir: '%f_Doc_rev%r/'
+    options:
+      # [string='%f-%i%I%v.%x'] name for the drill file, KiCad defaults if empty (%i='PTH_drill'). Affected by global options
+      output: '%f-%i%I%v.%x'
+      metric_units: true
+      pth_and_npth_single_file: true
+      map:
+        type: 'pdf'
+      report:
+        filename: '%f-%i%I%v.%x'
+
+
+  # BoM (Bill of Materials):
+  # This output can generate XYRS files (pick and place files).
+  # Is compatible with KiBoM, but doesn't need to update the XML netlist because the components
+  # are loaded from the schematic.
+  # Important differences with KiBoM output:
+  # - All options are in the main `options` section, not in `conf` subsection.
+  # - The `Component` column is named `Row` and works just like any other column.
+  # This output is what you get from the 'Tools/Generate Bill of Materials' menu in eeschema.
+  - name: 'bom_csv'
+    comment: 'BOM as CSV'
+    type: 'bom'
+    dir: '%f_Doc_rev%r/'
+    options:
+      output: '%f-%i%I%v.%x'
+
+      # [list(dict)|list(string)] List of columns to display.
+      # Can be just the name of the field
+      columns:
+        - field: 'Row'
+        - field: 'Part'
+        - field: 'Footprint'
+        - field: 'Value'
+        - field: 'References'
+        - field: 'Quantity Per PCB'
+        - field: 'Description'
+        - field: 'Status'
+        # - field: 'Datasheet'
+
+
+#        - comment: 'Ref'
+#          name: 'Ref'
+#          field: 'Reference'
+#          level: 0
+
+      # [boolean=true] Exclude DNF (Do Not Fit) components
+      ignore_dnf: false
+      # [boolean=false] Try to normalize the R, L and C values, producing uniform units and prefixes
+      normalize_values: true
+
+      format: 'CSV'
+      # [dict] Options for the CSV, TXT and TSV formats
+      csv:
+        # [boolean=false] Enclose all values using double quotes
+        quote_all: true
+        separator: ';'
+
+
+  - name: 'bom_xls'
+    comment: 'BOM as CSV'
+    type: 'bom'
+    dir: '%f_Doc_rev%r/'
+    extends: 'bom_csv'
+
+    options:
+      output: '%f-%i%I%v.%x'
+      format: 'XLSX'
+
+  - name: 'ibom'
+    comment: 'BOM as HTML (interactive)'
+    type: 'ibom'
+    dir: '%f_Doc_rev%r/'
+
+    options:
+      output: '%f-bom%I%v.%x'
+
+
+  - name: 'zip'
+    comment: 'Fabrication ZIP bundle'
+    type: 'compress'
+
+    options:
+      output: '%f_Fab_rev%r%I%v.%x'
+      files:
+        - from_output: 'gerber'
+        - from_output: 'drill'

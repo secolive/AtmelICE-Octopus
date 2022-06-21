@@ -1,12 +1,12 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(6.0.0-0)*
-G04 #@! TF.CreationDate,2022-01-14T21:33:19+01:00*
-G04 #@! TF.ProjectId,ATMEL-ICE-Octopus-Back,41544d45-4c2d-4494-9345-2d4f63746f70,rev?*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(6.0.2-0)*
+G04 #@! TF.CreationDate,2022-06-21T16:47:28+02:00*
+G04 #@! TF.ProjectId,ATMEL-ICE-Octopus-Back,41544d45-4c2d-4494-9345-2d4f63746f70,A1*
 G04 #@! TF.SameCoordinates,Original*
-G04 #@! TF.FileFunction,Soldermask,Top*
+G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (6.0.0-0)) date 2022-01-14 21:33:19*
+G04 Created by KiCad (PCBNEW (6.0.2-0)) date 2022-06-21 16:47:28*
 %MOMM*%
 %LPD*%
 G01*

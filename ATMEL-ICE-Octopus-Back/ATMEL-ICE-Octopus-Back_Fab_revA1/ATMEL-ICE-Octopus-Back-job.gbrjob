@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "(6.0.0-0)"
+      "Version": "(6.0.2-0)"
     },
-    "CreationDate": "2022-01-14T21:33:20+01:00"
+    "CreationDate": "2022-06-21T16:47:28+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "ATMEL-ICE-Octopus-Back",
       "GUID": "41544d45-4c2d-4494-9345-2d4f63746f70",
-      "Revision": "rev?"
+      "Revision": "A1"
     },
     "Size": {
       "X": 10.1,
@@ -44,23 +44,23 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ATMEL-ICE-Octopus-Back-F_Silkscreen.gbr",
-      "FileFunction": "Legend,Top",
-      "FilePolarity": "Positive"
-    },
-    {
       "Path": "ATMEL-ICE-Octopus-Back-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ATMEL-ICE-Octopus-Back-F_Mask.gbr",
-      "FileFunction": "SolderMask,Top",
-      "FilePolarity": "Negative"
+      "Path": "ATMEL-ICE-Octopus-Back-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
     },
     {
       "Path": "ATMEL-ICE-Octopus-Back-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "ATMEL-ICE-Octopus-Back-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {

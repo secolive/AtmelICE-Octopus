@@ -6,7 +6,8 @@
 
   (title_block
     (title "ATMEL-ICE-OCTOPUS")
-    (rev "A0")
+    (rev "${rev}")
+    (comment 1 "${license}")
     (comment 2 "(e.g. SPI connector on Arduino Due)")
     (comment 3 "With monitoring of VCCIO to avoid damaging targets due to bad wiring")
     (comment 4 "Adapter for using ATMEL-ICE with various targets")

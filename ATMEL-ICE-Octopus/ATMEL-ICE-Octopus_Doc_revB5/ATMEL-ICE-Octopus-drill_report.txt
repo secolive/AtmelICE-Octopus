@@ -1,0 +1,27 @@
+Drill report for ATMEL-ICE-Octopus.kicad_pcb
+Created on Wednesday, 21 December 2022 at 23:03:14
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'ATMEL-ICE-Octopus.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (103 holes)
+    T2  0.700mm  0.0276"  (20 holes)
+    T3  0.800mm  0.0315"  (16 holes)
+    T4  1.000mm  0.0394"  (76 holes)
+
+    Total plated holes count 215
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T5  0.500mm  0.0197"  (24 holes)
+    T6  2.500mm  0.0984"  (3 holes)
+
+    Total unplated holes count 27

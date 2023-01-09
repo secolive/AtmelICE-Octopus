@@ -121,6 +121,7 @@
         "silk_overlap|135930000|87400000|b7db6fef-6372-48e3-b2cc-741cd4d51b09|64afed02-1bf2-41d7-8de5-ef6eb1c325a2",
         "silk_overlap|135930000|87400000|b7db6fef-6372-48e3-b2cc-741cd4d51b09|ff49bff1-440d-4ca1-af19-98d6ef0b0a1f",
         "silk_overlap|135930000|89850000|fd4dd5c7-7356-47c5-ad5f-4e0fa60c675d|739c094f-be9a-493d-8ee1-32f64efcd71a",
+        "silk_overlap|135930000|89875000|c6a80afe-3082-4c6f-801a-afdfcdcd39e9|fd4dd5c7-7356-47c5-ad5f-4e0fa60c675d",
         "silk_overlap|135930002|100151963|bef9ef4c-19fe-4d09-9813-5877d02b7bef|7afcc5a8-c7fa-493d-8029-de0e395bd310"
       ],
       "meta": {
@@ -456,10 +457,12 @@
           "/VIN_PROBE",
           "/VLED",
           "/VTG",
+          "/VoltageBooster/VBOOST",
           "/VoltageBooster/VIN_LIMITED",
           "/VoltageBooster/VIN_T1",
           "/VoltageBooster/VSW",
           "/VoltageLimiter/VIN_SLOW",
+          "/VoltageLimiter/VOUT",
           "GND",
           "VAA"
         ],
@@ -544,6 +547,6 @@
     ]
   ],
   "text_variables": {
-    "rev": "B5"
+    "rev": "B6"
   }
 }
